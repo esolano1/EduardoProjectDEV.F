@@ -35,9 +35,11 @@ console.log(persona2["edad"]);
 //------------------------------------------
 
 //To modify and add a property to an object
-persona1.edad = 41; // Modificar
-persona1.email = "juan@hotmail.com"; // Agregar
+persona1.edad = 41; // Modificar -that way or--> persona1["edad"] = 41;
+persona1.email = "juan@hotmail.com"; // Agregar -that way or- --> persona1["email"] = "juan@hotmail.com";
+persona1["email2"] = "juan2@hotmail.com"; // Agregar
 
 //Let's now to print this new information
-console.log(persona1.edad); //console.log(persona1["edad"]);
-console.log(persona1.email); //console.log(persona["email"]);
+console.log(persona1.edad); // or console.log(persona1["edad"]);
+console.log(persona1.email); //or console.log(persona["email"]);
+console.log(persona1["email2"]);// or console.log(persona1.email2);
