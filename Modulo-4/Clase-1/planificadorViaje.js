@@ -42,7 +42,8 @@ function calcularCosto(destino, transporte, numeroPersonas) {
         costoBase += 100;
     } else if (transporte === "Barco") {
         costoBase += 300;
-
+    }
+    
     // Descuento por cantidad de personas
     if (numeroPersonas >= 3) {
             costoBase -= 250;
@@ -73,12 +74,12 @@ function mostrarItinerario() {
 // Iniciar la aplicación
 function iniciarApp() {
     // Ejemplo de cómo registrar destinos
-    registrarDestino("Paris", "2024-06-15", "Avión");
-    registrarDestino("Londres", "2024-07-01", "Tren");
+    registrarDestino("Paris", "2024-06-15", "Avión", 4);
+    registrarDestino("Londres", "2024-07-01", "Tren", 2);
 
     // Mostrar el itinerario de los viajes
     mostrarItinerario();
 }
 
 // Ejecutar la aplicación
-iniciarApp();
+iniciarApp(); 
