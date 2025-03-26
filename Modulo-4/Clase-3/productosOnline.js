@@ -26,5 +26,5 @@ const nombresProductos = productos.map(producto => producto.nombre);
 console.log(nombresProductos);
 
 //Al menos un producto arriba de 100
-const masDeCien = productos.filter(producto => producto.precio > 100);
+const masDeCien = productos.some(producto => producto.precio > 100);
 console.log(masDeCien);
