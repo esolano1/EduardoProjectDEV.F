@@ -11,7 +11,7 @@ function leerDatos(callback) {
     setTimeout(() => {
         // Aquí simulas leer el JSON con un retraso de 1 segundo
         callback(biblioteca);
-    }, 1000);
+    }, 3000);
 }
 
 // Función para mostrar todos los libros en consola
